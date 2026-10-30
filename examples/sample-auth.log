@@ -1,0 +1,155 @@
+# SYNTHETIC sample auth log for AuthLog Sentinel. NOT real data.
+# All addresses are from documentation ranges (RFC 5737 / RFC 3849); all hosts, users and keys are made up.
+# Contents: credential stuffing (203.0.113.77), fast root brute force (198.51.100.23),
+# slow root brute force (198.51.100.200, one try every 7 min), IPv6 brute force (2001:db8:dead:beef::7),
+# publickey probing, invalid-user probes, a preauth-only scanner, legit logins, noise, and malformed lines.
+Oct 28 00:03:00 bastion01 sshd[21060]: Failed password for root from 198.51.100.200 port 55059 ssh2
+Oct 28 00:10:00 bastion01 sshd[21066]: Failed password for root from 198.51.100.200 port 55106 ssh2
+Oct 28 00:17:00 bastion01 sshd[21079]: Failed password for root from 198.51.100.200 port 57372 ssh2
+Oct 28 00:24:00 bastion01 sshd[21106]: Failed password for root from 198.51.100.200 port 57953 ssh2
+Oct 28 00:31:00 bastion01 sshd[21109]: Failed password for root from 198.51.100.200 port 36423 ssh2
+Oct 28 00:38:00 bastion01 sshd[21136]: Failed password for root from 198.51.100.200 port 47014 ssh2
+Oct 28 00:45:00 bastion01 sshd[21155]: Failed password for root from 198.51.100.200 port 47635 ssh2
+Oct 28 00:52:00 bastion01 sshd[21208]: Failed password for root from 198.51.100.200 port 56429 ssh2
+Oct 28 00:59:00 bastion01 sshd[21261]: Failed password for root from 198.51.100.200 port 49171 ssh2
+Oct 28 01:05:00 bastion01 sshd[21293]: Accepted publickey for deploy from 192.0.2.10 port 53720 ssh2: ED25519 SHA256:q3Zk0Rr4bV1o8m2yJt9WcX7pLs6Hn5aGfE0dKiU2TzQ
+Oct 28 01:05:00 bastion01 sshd[21314]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Oct 28 01:06:00 bastion01 sshd[21344]: Failed password for root from 198.51.100.200 port 49403 ssh2
+Oct 28 01:13:00 bastion01 sshd[21391]: Failed password for root from 198.51.100.200 port 53257 ssh2
+Oct 28 01:17:00 bastion01 CRON[21440]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 28 01:20:00 bastion01 sshd[21493]: Failed password for root from 198.51.100.200 port 60347 ssh2
+Oct 28 01:27:00 bastion01 sshd[21531]: Failed password for root from 198.51.100.200 port 52722 ssh2
+Oct 28 01:34:00 bastion01 sshd[21576]: Failed password for root from 198.51.100.200 port 37776 ssh2
+Oct 28 01:41:00 bastion01 sshd[21624]: Failed password for root from 198.51.100.200 port 57753 ssh2
+Oct 28 01:48:00 bastion01 sshd[21658]: Failed password for root from 198.51.100.200 port 50442 ssh2
+Oct 28 01:55:00 bastion01 sshd[21670]: Failed password for root from 198.51.100.200 port 32786 ssh2
+Oct 28 02:00:00 bastion01 sshd[21685]: Failed password for root from 198.51.100.23 port 41876 ssh2
+Oct 28 02:00:50 bastion01 sshd[21706]: Failed password for root from 198.51.100.23 port 60100 ssh2
+Oct 28 02:01:25 bastion01 sshd[21722]: Failed password for root from 198.51.100.23 port 44898 ssh2
+Oct 28 02:02:00 bastion01 sshd[21728]: Failed password for root from 198.51.100.200 port 43389 ssh2
+Oct 28 02:02:01 bastion01 sshd[21768]: Failed password for root from 198.51.100.23 port 54728 ssh2
+Oct 28 02:02:51 bastion01 sshd[21818]: Failed password for root from 198.51.100.23 port 35107 ssh2
+Oct 28 02:03:41 bastion01 sshd[21855]: Failed password for root from 198.51.100.23 port 38375 ssh2
+Oct 28 02:04:18 bastion01 sshd[21861]: Failed password for root from 198.51.100.23 port 38122 ssh2
+Oct 28 02:05:00 bastion01 sshd[21911]: Failed password for root from 198.51.100.23 port 41613 ssh2
+Oct 28 02:05:37 bastion01 sshd[21934]: Failed password for root from 198.51.100.23 port 55201 ssh2
+Oct 28 02:06:08 bastion01 sshd[21940]: Failed password for root from 198.51.100.23 port 40273 ssh2
+Oct 28 02:06:48 bastion01 sshd[21946]: Failed password for root from 198.51.100.23 port 45913 ssh2
+Oct 28 02:07:20 bastion01 sshd[21986]: Failed password for root from 198.51.100.23 port 39681 ssh2
+Oct 28 02:08:00 bastion01 sshd[22019]: Failed password for root from 198.51.100.23 port 39735 ssh2
+Oct 28 02:08:42 bastion01 sshd[22054]: Failed password for root from 198.51.100.23 port 53832 ssh2
+Oct 28 02:09:00 bastion01 sshd[22111]: Failed password for root from 198.51.100.200 port 33406 ssh2
+Oct 28 02:09:16 bastion01 sshd[22147]: Failed password for root from 198.51.100.23 port 41447 ssh2
+Oct 28 02:09:53 bastion01 sshd[22160]: Failed password for root from 198.51.100.23 port 57179 ssh2
+Oct 28 02:10:40 bastion01 sshd[22166]: Failed password for root from 198.51.100.23 port 41377 ssh2
+Oct 28 02:11:23 bastion01 sshd[22201]: Failed password for root from 198.51.100.23 port 51889 ssh2
+Oct 28 03:1
+Oct 28 02:12:04 bastion01 sshd[22209]: Failed password for root from 198.51.100.23 port 39954 ssh2
+Oct 28 02:12:50 bastion01 sshd[22266]: Failed password for root from 198.51.100.23 port 48939 ssh2
+Oct 28 02:13:21 bastion01 sshd[22280]: Failed password for root from 198.51.100.23 port 60984 ssh2
+Oct 28 02:13:55 bastion01 sshd[22287]: Failed password for root from 198.51.100.23 port 53328 ssh2
+Oct 28 02:14:38 bastion01 sshd[22328]: Failed password for root from 198.51.100.23 port 52311 ssh2
+Oct 28 02:15:20 bastion01 sshd[22335]: Failed password for root from 198.51.100.23 port 45272 ssh2
+Oct 28 02:16:00 bastion01 sshd[22381]: Failed password for root from 198.51.100.200 port 44662 ssh2
+Oct 28 02:16:04 bastion01 sshd[22439]: Failed password for root from 198.51.100.23 port 50106 ssh2
+Oct 28 02:17:11 bastion01 sshd[22457]: Accepted password for root from 198.51.100.23 port 60974 ssh2
+Oct 28 02:23:00 bastion01 sshd[22485]: Failed password for root from 198.51.100.200 port 40614 ssh2
+Oct 28 02:30:00 bastion01 sshd[22495]: Failed password for root from 198.51.100.200 port 40660 ssh2
+Oct 28 02:30:00 bastion01 sshd[22554]: Received disconnect from 198.51.100.23 port 51122:11: Bye Bye [preauth]
+Oct 28 02:37:00 bastion01 sshd[22593]: Failed password for root from 198.51.100.200 port 35348 ssh2
+Oct 28 02:44:00 bastion01 sshd[22611]: Failed password for root from 198.51.100.200 port 56751 ssh2
+Oct 28 02:51:00 bastion01 sshd[22651]: Failed password for root from 198.51.100.200 port 59507 ssh2
+Oct 28 02:58:00 bastion01 sshd[22692]: Failed password for root from 198.51.100.200 port 57691 ssh2
+Oct 28 03:05:00 bastion01 sshd[22697]: Failed password for root from 198.51.100.200 port 57862 ssh2
+Oct 28 03:10:00 bastion01 sshd[22739]: Invalid user admin from 203.0.113.77 port 33809
+Oct 28 03:10:02 bastion01 sshd[22739]: Failed password for invalid user admin from 203.0.113.77 port 33809 ssh2
+Oct 28 03:10:03 bastion01 sshd[22739]: Connection closed by 203.0.113.77 port 33809 [preauth]
+Oct 28 03:11:02 bastion01 sshd[22747]: Invalid user test from 203.0.113.77 port 49327
+Oct 28 03:11:04 bastion01 sshd[22747]: Failed password for invalid user test from 203.0.113.77 port 49327 ssh2
+Oct 28 03:11:05 bastion01 sshd[22747]: Connection closed by 203.0.113.77 port 49327 [preauth]
+Oct 28 03:12:00 bastion01 sshd[22776]: Failed password for root from 198.51.100.200 port 36975 ssh2
+Oct 28 03:12:03 bastion01 sshd[22821]: Invalid user oracle from 203.0.113.77 port 56230
+Oct 28 03:12:05 bastion01 sshd[22821]: Failed password for invalid user oracle from 203.0.113.77 port 56230 ssh2
+Oct 28 03:12:06 bastion01 sshd[22821]: Connection closed by 203.0.113.77 port 56230 [preauth]
+Oct 28 03:13:12 bastion01 sshd[22861]: Invalid user ubuntu from 203.0.113.77 port 52077
+Oct 28 03:13:14 bastion01 sshd[22861]: Failed password for invalid user ubuntu from 203.0.113.77 port 52077 ssh2
+Oct 28 03:13:15 bastion01 sshd[22861]: Connection closed by 203.0.113.77 port 52077 [preauth]
+Oct 28 03:14:29 bastion01 sshd[22900]: Invalid user pi from 203.0.113.77 port 46616
+Oct 28 03:14:31 bastion01 sshd[22900]: Failed password for invalid user pi from 203.0.113.77 port 46616 ssh2
+Oct 28 03:14:32 bastion01 sshd[22900]: Connection closed by 203.0.113.77 port 46616 [preauth]
+Oct 28 03:15:30 bastion01 sshd[22936]: Invalid user postgres from 203.0.113.77 port 57786
+Oct 28 03:15:32 bastion01 sshd[22936]: Failed password for invalid user postgres from 203.0.113.77 port 57786 ssh2
+Oct 28 03:15:33 bastion01 sshd[22936]: Connection closed by 203.0.113.77 port 57786 [preauth]
+Oct 28 03:16:37 bastion01 sshd[22959]: Invalid user git from 203.0.113.77 port 35937
+Oct 28 03:16:39 bastion01 sshd[22959]: Failed password for invalid user git from 203.0.113.77 port 35937 ssh2
+Oct 28 03:16:40 bastion01 sshd[22959]: Connection closed by 203.0.113.77 port 35937 [preauth]
+Oct 28 03:17:40 bastion01 sshd[22978]: Invalid user user from 203.0.113.77 port 59215
+Oct 28 03:17:42 bastion01 sshd[22978]: Failed password for invalid user user from 203.0.113.77 port 59215 ssh2
+Oct 28 03:17:43 bastion01 sshd[22978]: Connection closed by 203.0.113.77 port 59215 [preauth]
+Oct 28 03:18:38 bastion01 sshd[22994]: Invalid user support from 203.0.113.77 port 45171
+Oct 28 03:18:40 bastion01 sshd[22994]: Failed password for invalid user support from 203.0.113.77 port 45171 ssh2
+Oct 28 03:18:41 bastion01 sshd[22994]: Connection closed by 203.0.113.77 port 45171 [preauth]
+Oct 28 03:19:00 bastion01 sshd[23039]: Failed password for root from 198.51.100.200 port 50783 ssh2
+Oct 28 03:19:59 bastion01 sshd[23087]: Invalid user guest from 203.0.113.77 port 53367
+Oct 28 03:20:01 bastion01 sshd[23087]: Failed password for invalid user guest from 203.0.113.77 port 53367 ssh2
+Oct 28 03:20:02 bastion01 sshd[23087]: Connection closed by 203.0.113.77 port 53367 [preauth]
+<garbage line without a syslog header>
+Oct 28 03:21:00 bastion01 sshd[23110]: Invalid user ftpuser from 203.0.113.77 port 55855
+Oct 28 03:21:02 bastion01 sshd[23110]: Failed password for invalid user ftpuser from 203.0.113.77 port 55855 ssh2
+Oct 28 03:21:03 bastion01 sshd[23110]: Connection closed by 203.0.113.77 port 55855 [preauth]
+Oct 28 03:22:19 bastion01 sshd[23128]: Invalid user hadoop from 203.0.113.77 port 42250
+Oct 28 03:22:21 bastion01 sshd[23128]: Failed password for invalid user hadoop from 203.0.113.77 port 42250 ssh2
+Oct 28 03:22:22 bastion01 sshd[23128]: Connection closed by 203.0.113.77 port 42250 [preauth]
+Oct 28 03:26:00 bastion01 sshd[23147]: Failed password for root from 198.51.100.200 port 41453 ssh2
+Oct 28 03:33:00 bastion01 sshd[23175]: Failed password for root from 198.51.100.200 port 52644 ssh2
+Oct 28 03:40:00 bastion01 sshd[23186]: Failed password for root from 198.51.100.200 port 39708 ssh2
+Oct 28 03:47:00 bastion01 sshd[23231]: Failed password for root from 198.51.100.200 port 57516 ssh2
+Oct 28 03:54:00 bastion01 sshd[23275]: Failed password for root from 198.51.100.200 port 56129 ssh2
+Oct 28 04:01:00 bastion01 sshd[23297]: Failed password for root from 198.51.100.200 port 45842 ssh2
+Oct 28 04:08:00 bastion01 sshd[23329]: Failed password for root from 198.51.100.200 port 47123 ssh2
+Oct 28 04:15:00 bastion01 sshd[23352]: Failed password for root from 198.51.100.200 port 47562 ssh2
+Oct 28 04:17:00 bastion01 CRON[23403]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 28 04:22:00 bastion01 sshd[23410]: Failed password for root from 198.51.100.200 port 40891 ssh2
+Oct 28 04:29:00 bastion01 sshd[23413]: Failed password for root from 198.51.100.200 port 34866 ssh2
+Oct 28 04:36:00 bastion01 sshd[23445]: Failed password for root from 198.51.100.200 port 33457 ssh2
+Oct 28 04:40:00 bastion01 sshd[23487]: Accepted publickey for deploy from 192.0.2.10 port 57067 ssh2: ED25519 SHA256:q3Zk0Rr4bV1o8m2yJt9WcX7pLs6Hn5aGfE0dKiU2TzQ
+Oct 28 04:40:00 bastion01 sshd[23526]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Oct 28 04:43:00 bastion01 sshd[23535]: Failed password for root from 198.51.100.200 port 50918 ssh2
+Oct 28 04:50:00 bastion01 sshd[23542]: Failed password for root from 198.51.100.200 port 52050 ssh2
+Oct 28 04:57:00 bastion01 sshd[23579]: Failed password for root from 198.51.100.200 port 33003 ssh2
+Oct 28 05:04:00 bastion01 sshd[23595]: Failed password for root from 198.51.100.200 port 55962 ssh2
+Oct 28 05:30:00 bastion01 sshd[23630]: Failed password for alice from 2001:db8:dead:beef::7 port 40269 ssh2
+Oct 28 05:30:21 bastion01 sshd[23649]: Failed password for alice from 2001:db8:dead:beef::7 port 60936 ssh2
+Oct 28 05:30:43 bastion01 sshd[23660]: Failed password for alice from 2001:db8:dead:beef::7 port 49615 ssh2
+Oct 28 05:31:11 bastion01 sshd[23685]: Failed password for alice from 2001:db8:dead:beef::7 port 54689 ssh2
+Oct 28 05:31:37 bastion01 sshd[23744]: Failed password for alice from 2001:db8:dead:beef::7 port 50437 ssh2
+Oct 28 05:32:15 bastion01 sshd[23751]: Failed password for alice from 2001:db8:dead:beef::7 port 51649 ssh2
+Oct 28 05:32:42 bastion01 sshd[23810]: Failed password for alice from 2001:db8:dead:beef::7 port 58478 ssh2
+Oct 28 05:33:15 bastion01 sshd[23828]: Failed password for alice from 2001:db8:dead:beef::7 port 39007 ssh2
+Oct 28 05:33:38 bastion01 sshd[23854]: Failed password for alice from 2001:db8:dead:beef::7 port 54361 ssh2
+Oct 28 05:34:09 bastion01 sshd[23875]: Failed password for alice from 2001:db8:dead:beef::7 port 46647 ssh2
+Oct 28 05:34:43 bastion01 sshd[23888]: Failed password for alice from 2001:db8:dead:beef::7 port 56658 ssh2
+Oct 28 06:00:00 bastion01 sshd[23919]: Server listening on 0.0.0.0 port 22.
+Oct 28 06:15:00 bastion01 sshd[23975]: Failed publickey for git from 203.0.113.5 port 53942 ssh2: RSA SHA256:Xb3vQ9mJk2LwP0tYc7Rn4Hs8Fd1Ge6Ua5Zi9Oq2KpM0
+Oct 28 06:15:01 bastion01 sshd[23975]: Connection closed by 203.0.113.5 port 53942 [preauth]
+Oct 28 06:16:30 bastion01 sshd[24012]: Failed publickey for git from 203.0.113.5 port 45961 ssh2: RSA SHA256:Xb3vQ9mJk2LwP0tYc7Rn4Hs8Fd1Ge6Ua5Zi9Oq2KpM0
+Oct 28 06:16:31 bastion01 sshd[24012]: Connection closed by 203.0.113.5 port 45961 [preauth]
+Oct 28 06:17:59 bastion01 sshd[24060]: Invalid user jenkins from 203.0.113.5 port 40915
+Oct 28 06:18:00 bastion01 sshd[24060]: Failed publickey for invalid user jenkins from 203.0.113.5 port 40915 ssh2: RSA SHA256:Xb3vQ9mJk2LwP0tYc7Rn4Hs8Fd1Ge6Ua5Zi9Oq2KpM0
+Oct 28 06:18:01 bastion01 sshd[24060]: Connection closed by 203.0.113.5 port 40915 [preauth]
+Oct 28 07:11:40 bastion01 sshd[24082]: Failed password for alice from 192.0.2.11 port 52117 ssh2
+Oct 28 07:12:00 bastion01 sshd[24124]: Accepted password for alice from 192.0.2.11 port 40082 ssh2
+Oct 28 07:12:00 bastion01 sshd[24178]: pam_unix(sshd:session): session opened for user alice(uid=1001) by (uid=0)
+Oct 28 07:17:00 bastion01 CRON[24222]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Oct 28 08:00:00 bastion01 sshd[24258]: Invalid user  from 203.0.113.9 port 47468
+Oct 28 08:00:01 bastion01 sshd[24258]: Connection closed by 203.0.113.9 port 47468 [preauth]
+Oct 28 25:61:99 bastion01 sshd[1]: Failed password for root from 198.51.100.23 port 1 ssh2
+Oct 28 08:05:00 bastion01 sshd[24261]: Invalid user support from 203.0.113.9 port 38780
+Oct 28 08:05:01 bastion01 sshd[24261]: Connection closed by 203.0.113.9 port 38780 [preauth]
+Oct 28 08:30:00 bastion01 sshd[24306]: Connection closed by 192.0.2.200 port 40953 [preauth]
+Oct 28 08:30:19 bastion01 sshd[24361]: Connection closed by 192.0.2.200 port 59245 [preauth]
+Oct 28 08:30:27 bastion01 sshd[24399]: Connection closed by 192.0.2.200 port 34425 [preauth]
+Oct 28 08:30:32 bastion01 sshd[24421]: Connection closed by 192.0.2.200 port 35824 [preauth]
+Oct 28 09:01:00 bastion01 sshd[24466]: Accepted publickey for deploy from 192.0.2.10 port 54942 ssh2: ED25519 SHA256:q3Zk0Rr4bV1o8m2yJt9WcX7pLs6Hn5aGfE0dKiU2TzQ
+Oct 28 09:01:00 bastion01 sshd[24475]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Oct 28 04:00:00 bastion01 sshd[1]: Failed password for root from 999.1.2.3 port 22 ssh2
